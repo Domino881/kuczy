@@ -1,8 +1,7 @@
 " =============================================================================
 " Filename: autoload/lightline/colorscheme/kuczy.vim
 " Author: Domino881
-" License: ---
-" Last Change: 30.05.2020 10:58:51 CEST
+" Last Change: 30.05.2020 22:51:11 CEST
 " =============================================================================
 if exists('g:lightline')
 
