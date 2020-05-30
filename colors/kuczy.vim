@@ -46,3 +46,4 @@ execute 'hi  MatchParen cterm=NONE ctermbg=' . s:Kaqua
 execute 'hi  Underlined cterm=underline ctermfg=' . s:Kaqua
 hi  ColorColumn ctermbg=236
 
+hi  VertSplit ctermbg=NONE cterm=NONE ctermfg=236
