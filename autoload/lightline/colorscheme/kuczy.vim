@@ -17,10 +17,10 @@ let s:orange = [ '#fad07a', 222 ]
 let s:red = [ '#cf6a4c', 167 ]
 let s:cyan = [ '#8fbfdc', 110 ]
 
-let s:Klorange = [ 216 ]
-let s:Kdarkdenim = [ 060 ]
-let s:Kyellow = [ 222 ]
-let s:Korange = [ 209 ]
+let s:Klorange = [ '#ffaf87', 216 ]
+let s:Kdarkdenim = [ '#5f5f87', 060 ]
+let s:Kyellow = [ '#ffdf87', 222 ]
+let s:Korange = [ '#ff875f', 209 ]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left = [ [ s:base02, s:Kdarkdenim ], [ s:base3, s:base01 ] ]
