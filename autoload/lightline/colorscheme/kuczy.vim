@@ -18,7 +18,7 @@ let s:red = [ '#cf6a4c', 167 ]
 let s:cyan = [ '#8fbfdc', 110 ]
 
 let s:Klorange = [ '#ffaf87', 216 ]
-let s:Kdarkdenim = [ '#5f5f87', 060 ]
+let s:Kdarkdenim = [ '#5f5f87', 60 ]
 let s:Kyellow = [ '#ffdf87', 222 ]
 let s:Korange = [ '#ff875f', 209 ]
 
