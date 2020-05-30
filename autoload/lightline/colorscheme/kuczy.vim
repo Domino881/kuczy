@@ -3,7 +3,6 @@
 " Author: Domino881
 " Last Change: 30.05.2020 22:51:11 CEST
 " =============================================================================
-if exists('g:lightline')
 
 let s:base03     = [ '#151513', 233 ]
 let s:base02     = [ '#30302c', 236 ]
@@ -21,6 +20,8 @@ let s:Klorange   = [ '#ffaf87', 216 ]
 let s:Kdarkdenim = [ '#5f5f87', 60  ]
 let s:Kyellow    = [ '#ffdf87', 222 ]
 let s:Korange    = [ '#ff875f', 209 ]
+
+if exists('g:lightline')
 
 	let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 	let s:p.normal.left = [ [ s:base02, s:Kdarkdenim ], [ s:base3, s:base01 ] ]
