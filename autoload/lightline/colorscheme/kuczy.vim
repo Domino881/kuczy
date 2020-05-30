@@ -4,7 +4,7 @@
 " License: ---
 " Last Change: 30.05.2020 10:58:51 CEST
 " =============================================================================
-if exists('g:ligtline')
+if exists('g:lightline')
 
 	let s:base03 = [ '#151513', 233 ]
 	let s:base02 = [ '#30302c', 236 ]
