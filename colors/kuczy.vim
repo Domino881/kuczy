@@ -28,7 +28,7 @@ execute 'hi  Identifier cterm=NONE ctermfg=' . s:Kyellow
 execute 'hi  Statement guifg=#FF0000 ctermfg=' . s:Klorange
 execute 'hi  Preproc ctermfg=' . s:Kdarkdenim
 execute 'hi  Type cterm=bold ctermfg=' . s:Kaqua
-execute 'hi  Special cterm=bold ctermfg=' . s:Korange
+execute 'hi  Special cterm=NONE ctermfg=' . s:Korange
 
 execute 'hi  Folded ctermbg=NONE ctermfg=' . s:Korange 
 execute 'hi  cCustomClass ctermfg=' . s:Kllorange
