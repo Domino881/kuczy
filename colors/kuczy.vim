@@ -1,5 +1,8 @@
-" Maintainer:	Dominik Kuczyński <GitHub: Domino881>
-" Last Change:	2020 May 24
+" =============================================================================
+" Filename: colors/kuczy.vim
+" Author: Domino881
+" Last Change: 30.05.2020 22:57:57 CEST
+" =============================================================================
 
 set background=dark
 hi clear
@@ -9,14 +12,14 @@ endif
 
 let g:colors_name = "kuczy2"
 
-let s:Kdarkdenim='060'
-let s:Kaqua='037'
-let s:Kyellow='222'
-let s:Klorange='216'
-let s:Korange='209'
-let s:Kllorange='215'
+let s:Kdarkdenim = '060'
+let s:Kaqua      = '037'
+let s:Kyellow    = '222'
+let s:Klorange   = '216'
+let s:Korange    = '209'
+let s:Kllorange  = '215'
 
-hi Normal ctermbg=235
+hi  Normal ctermbg=235
 
 hi  Comment ctermfg=darkgrey cterm=italic 
 
