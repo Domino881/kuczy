@@ -16,19 +16,19 @@ let s:Klorange='216'
 let s:Korange='209'
 let s:Kllorange='215'
 
-hi normal ctermbg=235
+hi Normal ctermbg=235
 
-hi  comment ctermfg=darkgrey cterm=italic 
+hi  Comment ctermfg=darkgrey cterm=italic 
 
-execute 'hi  constant ctermfg=' . s:Kdarkdenim
-execute 'hi  string cterm=NONE ctermfg=' . s:Korange
-execute 'hi  character ctermfg=' . s:Korange
+execute 'hi  Constant ctermfg=' . s:Kdarkdenim
+execute 'hi  String cterm=NONE ctermfg=' . s:Korange
+execute 'hi  Character ctermfg=' . s:Korange
 
-execute 'hi  identifier cterm=NONE ctermfg=' . s:Kyellow
-execute 'hi  statement guifg=#FF0000 ctermfg=' . s:Klorange
-execute 'hi  preproc ctermfg=' . s:Kdarkdenim
-execute 'hi  type cterm=bold ctermfg=' . s:Kaqua
-execute 'hi  special cterm=bold ctermfg=' . s:Korange
+execute 'hi  Identifier cterm=NONE ctermfg=' . s:Kyellow
+execute 'hi  Statement guifg=#FF0000 ctermfg=' . s:Klorange
+execute 'hi  Preproc ctermfg=' . s:Kdarkdenim
+execute 'hi  Type cterm=bold ctermfg=' . s:Kaqua
+execute 'hi  Special cterm=bold ctermfg=' . s:Korange
 
 execute 'hi  Folded ctermbg=NONE ctermfg=' . s:Korange 
 execute 'hi  cCustomClass ctermfg=' . s:Kllorange
@@ -42,3 +42,7 @@ execute 'hi  Search cterm=underline ctermbg=NONE ctermfg=' . s:Klorange
 hi  IncSearch ctermfg=NONE ctermbg=NONE cterm=reverse
 
 hi  Visual ctermbg=darkgrey cterm=bold
+execute 'hi  MatchParen cterm=NONE ctermbg=' . s:Kaqua
+execute 'hi  Underlined cterm=underline ctermfg=' . s:Kaqua
+hi  ColorColumn ctermbg=236
+
