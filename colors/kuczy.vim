@@ -44,7 +44,7 @@ hi  SignColumn ctermbg=NONE
 execute 'hi  Search cterm=underline ctermbg=NONE ctermfg=' . s:Klorange
 hi  IncSearch ctermfg=NONE ctermbg=NONE cterm=reverse
 
-hi  Visual ctermbg=darkgrey cterm=bold
+hi  Visual ctermbg=238 cterm=bold
 execute 'hi  MatchParen cterm=NONE ctermbg=' . s:Kaqua
 execute 'hi  Underlined cterm=underline ctermfg=' . s:Kaqua
 hi  ColorColumn ctermbg=236
