@@ -20,6 +20,11 @@ let s:Korange    = '209'
 let s:Kllorange  = '215'
 
 hi  Normal ctermbg=235
+augroup BgHighlight
+	autocmd!
+	autocmd Winenter * hi Normal ctermbg=235
+	autocmd WinLeave * hi Normal ctermbg=236
+augroup END
 
 hi  Comment ctermfg=darkgrey cterm=italic 
 
@@ -51,3 +56,4 @@ hi  ColorColumn ctermbg=236
 
 hi  VertSplit ctermbg=NONE cterm=NONE ctermfg=236
 execute 'hi  Title cterm=bold ctermfg=' . s:Korange
+
