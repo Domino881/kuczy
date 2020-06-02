@@ -51,4 +51,4 @@ hi  ColorColumn ctermbg=236
 
 hi  VertSplit ctermbg=NONE cterm=NONE ctermfg=236
 execute 'hi  Title cterm=bold ctermfg=' . s:Korange
-
+hi  Conceal ctermbg=NONE
