@@ -32,6 +32,9 @@ hi  VertSplit ctermbg=NONE cterm=NONE ctermfg=236
 hi  ColorColumn ctermbg=236
 hi  Visual ctermbg=238 cterm=bold
 hi  IncSearch ctermfg=NONE ctermbg=NONE cterm=reverse
+hi  TablineFill cterm=NONE ctermbg=234
+hi  TablineSel cterm=bold ctermbg=NONE
+hi  Tabline cterm=NONE ctermbg=236
 
 execute 'hi  Constant ctermfg=' . s:Kdarkdenim
 execute 'hi  String cterm=NONE ctermfg=' . s:Korange
