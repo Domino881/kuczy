@@ -31,3 +31,16 @@ and
 		\}
 
 to your .vimrc.
+
+#### folding
+
+There is also a custom folding feature, making vim folds look like this:
+
+![fold_screenshot](https://user-images.githubusercontent.com/26608084/84416217-34993280-ac14-11ea-8b1d-92f4d7f06d17.png)
+
+
+To enable it add
+
+	let g:kuczyfold = 1
+
+to your .vimrc.
