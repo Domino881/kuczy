@@ -55,3 +55,17 @@ execute 'hi  Title cterm=bold ctermfg=' . s:Korange
 
 execute 'hi  cFormat cterm=bold ctermfg=' . s:Korange
 execute 'hi  cCustomClass ctermfg=' . s:Kllorange
+
+"experimental - folding
+if exists('g:kuczyfold')
+	set fillchars=fold:╌
+	function! KuczyFoldText()
+		let line = getline(v:foldstart)
+		let lines_count = v:foldend - v:foldstart + 1
+		let lines_count_text = '| ' . printf("%8s", lines_count . ' lines') . ' | '
+		let foldchar = matchstr(&fillchars, 'fold:\zs.')
+		let textlen = strlen(line . lines_count_text) + 7
+		return line . repeat(foldchar, winwidth(0)-textlen) . lines_count_text
+	endfunction
+	set foldtext=KuczyFoldText()
+endif
