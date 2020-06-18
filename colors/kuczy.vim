@@ -35,6 +35,7 @@ hi  IncSearch ctermfg=NONE ctermbg=NONE cterm=reverse
 hi  TablineFill cterm=NONE ctermbg=234
 hi  TablineSel cterm=bold ctermbg=NONE ctermfg=250
 hi  Tabline cterm=NONE ctermbg=236 ctermfg=243
+hi  Pmenu cterm=NONE ctermbg=237 ctermfg=243
 
 execute 'hi  Constant ctermfg=' . s:Kdarkdenim
 execute 'hi  String cterm=NONE ctermfg=' . s:Korange
