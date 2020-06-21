@@ -1,7 +1,7 @@
 " =============================================================================
 " Filename: colors/kuczy.vim
 " Author: Domino881
-" Last Change: 21.06.2020 16:36:00 CEST
+" Last Change: 21.06.2020 18:16:36 CEST
 " =============================================================================
 
 set background=dark
@@ -12,48 +12,64 @@ endif
 
 let g:colors_name = "kuczy"
 
-let s:Kdarkdenim = '060'
-let s:Kaqua      = '037'
-let s:Kyellow    = '222'
-let s:Klorange   = '216'
-let s:Korange    = '209'
-let s:Kllorange  = '215'
-let s:Klgreenish = '109'
+function! s:HL(group, term, fg, bg)	
+	let histr = 'hi ' . a:group 
 
-hi  Normal ctermbg=235
+	if a:term != '' 
+		let histr .= ' cterm=' . a:term . ' gui=' . a:term
+	endif
+	if a:fg != []
+		let histr .= ' ctermfg=' . a:fg[0] . ' guifg=' . a:fg[1]
+	endif
+	if a:bg != []
+		let histr .= ' ctermbg=' . a:bg[0] . ' guibg=' . a:bg[1]
+	endif
 
-hi  Comment ctermfg=darkgrey cterm=italic 
-hi  LineNr ctermfg=darkgrey
-hi  CursorLineNr ctermfg=grey cterm=NONE
-hi  SpecialKey ctermfg=237
-hi  SignColumn ctermbg=NONE
-hi  Conceal ctermbg=NONE
-hi  VertSplit ctermbg=NONE cterm=NONE ctermfg=236
-hi  ColorColumn ctermbg=236
-hi  Visual ctermbg=238 cterm=bold
-hi  IncSearch ctermfg=NONE ctermbg=NONE cterm=reverse
-hi  TablineFill cterm=NONE ctermbg=234
-hi  TablineSel cterm=bold ctermbg=NONE ctermfg=250
-hi  Tabline cterm=NONE ctermbg=236 ctermfg=243
-hi  Pmenu cterm=NONE ctermbg=237 ctermfg=243
+	"echo histr
+	execute histr
+endfunction
 
-execute 'hi  Constant ctermfg=' . s:Kdarkdenim
-execute 'hi  String cterm=NONE ctermfg=' . s:Korange
-execute 'hi  Character ctermfg=' . s:Korange
 
-execute 'hi  Identifier cterm=NONE ctermfg=' . s:Kyellow
-execute 'hi  Statement guifg=#FF0000 ctermfg=' . s:Klorange
-execute 'hi  Preproc ctermfg=' . s:Kdarkdenim
-execute 'hi  Type cterm=bold ctermfg=' . s:Kaqua
-execute 'hi  Special cterm=NONE ctermfg=' . s:Klgreenish
-execute 'hi  Folded ctermbg=NONE ctermfg=' . s:Korange 
-execute 'hi  Search cterm=underline ctermbg=NONE ctermfg=' . s:Klorange
-execute 'hi  MatchParen cterm=bold ctermbg=243 ctermfg=' . s:Korange
-execute 'hi  Underlined cterm=underline ctermfg=' . s:Kaqua
-execute 'hi  Title cterm=bold ctermfg=' . s:Korange
+let s:Kdarkdenim = ['060','#5F5F87']
+let s:Kaqua      = ['037','#00AFAF']
+let s:Kyellow    = ['222','#FFD787']
+let s:Klorange   = ['216','#FFAF87']
+let s:Korange    = ['209','#FF875F']
+let s:Kllorange  = ['215','#FFAF5F']
+let s:Klgreenish = ['109','#87AFAF']
 
-execute 'hi  cFormat cterm=bold ctermfg=' . s:Korange
-execute 'hi  cCustomClass ctermfg=' . s:Kllorange
+"__________GROUP________CTERM/GUI______FOREGROUND___________BACKGROUND________
+call s:HL('Normal',      'NONE',     ['223','#FFD7AF'],     ['235','#262626'])
+call s:HL('Comment',     'italic',   ['242','#6C6C6C'],     [])
+call s:HL('LineNr',      '',         ['242','#6C6C6C'],     [])
+call s:HL('CursorLineNr','NONE',     ['248','#A8A8A8'],     [])
+call s:HL('SpecialKey',  '',         ['237','#3A3A3A'],     [])
+call s:HL('SignColumn',  'NONE',     [],                    ['NONE','NONE'])
+call s:HL('Conceal',     '',         [],                    ['NONE','NONE'])
+call s:HL('VertSplit',   'NONE',     ['236','#303030'],     ['NONE','NONE'])
+call s:HL('ColorColumn', '',         [],                    ['236','#303030'])
+call s:HL('Visual',      'bold',     [],                    ['238','#444444'])
+call s:HL('IncSearch',   'reverse',  ['NONE','NONE'],       ['NONE','NONE'])
+call s:HL('TablineFill', 'NONE',     [],                    ['234','#1C1C1C'])
+call s:HL('TablineSel',  'bold',     ['250','#BCBCBC'],     ['NONE','NONE'])
+call s:HL('Tabline',     'NONE',     ['243','#767676'],     ['236','#303030'])
+call s:HL('pmenu',       '',         ['243','#767676'],     ['237','#3A3A3A'])
+
+call s:HL('Constant',    '',         s:Kdarkdenim,          [])
+call s:HL('String',      'NONE',     s:Klorange,            [])
+call s:HL('Character',   '',         s:Klorange,            [])
+call s:HL('Identifier',  'NONE',     s:Kyellow,             [])
+call s:HL('Statement',   '',         s:Korange,             [])
+call s:HL('Preproc',     '',         s:Kdarkdenim,          [])
+call s:HL('Type',        'bold',     s:Kaqua,               [])
+call s:HL('Special',     'NONE',     s:Klgreenish,          [])
+call s:HL('Folded',      '',         s:Korange,             ['NONE','NONE'])
+call s:HL('Search',      'underline',s:Klorange,            ['NONE','NONE'])
+call s:HL('MatchParen',  'bold',     s:Korange,             ['243','#767676'])
+call s:HL('Underlined',  'underline',s:Kaqua,               [])
+call s:HL('Title',       'bold',     s:Korange,             [])
+call s:HL('cFormat',     'bold',     s:Korange,             [])
+call s:HL('cCustomClass','',         s:Kllorange,           [])
 
 "experimental - folding
 if exists('g:kuczyfold')
