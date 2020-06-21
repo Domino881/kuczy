@@ -5,10 +5,10 @@
 * a simple, aesthetic vim+lightline colorscheme
 
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/26608084/83325540-415d7400-a26d-11ea-90a2-8941e23e5e49.png" width="400" />
-  <img src="https://user-images.githubusercontent.com/26608084/83325595-9ac5a300-a26d-11ea-8a5a-27cfd90fa70b.png" width="400" /> 
+  <img src="https://user-images.githubusercontent.com/26608084/85233968-a63e6100-b40a-11ea-87b3-0d2b43b1b550.png" width="400" />
+  <img src="https://user-images.githubusercontent.com/26608084/85233954-97f04500-b40a-11ea-9508-5671ecb3b1db.png" width="400" /> 
 </p>
-  <img src="https://user-images.githubusercontent.com/26608084/83325596-9bf6d000-a26d-11ea-8bf2-989d2438aef5.png" width="800" />
+  <img src="https://user-images.githubusercontent.com/26608084/85233947-86a73880-b40a-11ea-92b2-d13cdf3a5a39.png" width="800" />
 
 ### Installation:
 
