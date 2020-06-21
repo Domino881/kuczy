@@ -1,7 +1,7 @@
 " =============================================================================
 " Filename: colors/kuczy.vim
 " Author: Domino881
-" Last Change: 30.05.2020 22:57:57 CEST
+" Last Change: 21.06.2020 16:36:00 CEST
 " =============================================================================
 
 set background=dark
@@ -10,7 +10,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "kuczy2"
+let g:colors_name = "kuczy"
 
 let s:Kdarkdenim = '060'
 let s:Kaqua      = '037'
@@ -24,7 +24,7 @@ hi  Normal ctermbg=235
 
 hi  Comment ctermfg=darkgrey cterm=italic 
 hi  LineNr ctermfg=darkgrey
-hi  CursorLineNr ctermfg=grey
+hi  CursorLineNr ctermfg=grey cterm=NONE
 hi  SpecialKey ctermfg=237
 hi  SignColumn ctermbg=NONE
 hi  Conceal ctermbg=NONE
@@ -46,11 +46,9 @@ execute 'hi  Statement guifg=#FF0000 ctermfg=' . s:Klorange
 execute 'hi  Preproc ctermfg=' . s:Kdarkdenim
 execute 'hi  Type cterm=bold ctermfg=' . s:Kaqua
 execute 'hi  Special cterm=NONE ctermfg=' . s:Klgreenish
-
 execute 'hi  Folded ctermbg=NONE ctermfg=' . s:Korange 
 execute 'hi  Search cterm=underline ctermbg=NONE ctermfg=' . s:Klorange
-execute 'hi  MatchParen cterm=NONE ctermbg=' . s:Kaqua
-
+execute 'hi  MatchParen cterm=bold ctermbg=243 ctermfg=' . s:Korange
 execute 'hi  Underlined cterm=underline ctermfg=' . s:Kaqua
 execute 'hi  Title cterm=bold ctermfg=' . s:Korange
 
@@ -69,4 +67,10 @@ if exists('g:kuczyfold')
 		return line . repeat(foldchar, winwidth(0)-textlen) . lines_count_text
 	endfunction
 	set foldtext=KuczyFoldText()
+endif
+
+"fix for CursorLineNr in vim 8.2
+if v:version >= 802
+	set cursorline
+	set cursorlineopt=number
 endif
