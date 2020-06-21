@@ -37,6 +37,7 @@ let s:Klorange   = ['216','#FFAF87']
 let s:Korange    = ['209','#FF875F']
 let s:Kllorange  = ['215','#FFAF5F']
 let s:Klgreenish = ['109','#87AFAF']
+let s:Kmaroon    = ['167','#FF875F']
 
 "__________GROUP________CTERM/GUI______FOREGROUND___________BACKGROUND________
 call s:HL('Normal',      'NONE',     ['223','#FFD7AF'],     ['235','#262626'])
@@ -55,17 +56,17 @@ call s:HL('TablineSel',  'bold',     ['250','#BCBCBC'],     ['NONE','NONE'])
 call s:HL('Tabline',     'NONE',     ['243','#767676'],     ['236','#303030'])
 call s:HL('pmenu',       '',         ['243','#767676'],     ['237','#3A3A3A'])
 
-call s:HL('Constant',    '',         s:Kdarkdenim,          [])
+call s:HL('Constant',    '',         s:Kaqua,               [])
 call s:HL('String',      'NONE',     s:Klorange,            [])
 call s:HL('Character',   '',         s:Klorange,            [])
 call s:HL('Identifier',  'NONE',     s:Kyellow,             [])
 call s:HL('Statement',   '',         s:Korange,             [])
 call s:HL('Preproc',     '',         s:Kdarkdenim,          [])
-call s:HL('Type',        'bold',     s:Kaqua,               [])
+call s:HL('Type',        'bold',     s:Kmaroon,             [])
 call s:HL('Special',     'NONE',     s:Klgreenish,          [])
 call s:HL('Folded',      '',         s:Korange,             ['NONE','NONE'])
 call s:HL('Search',      'underline',s:Klorange,            ['NONE','NONE'])
-call s:HL('MatchParen',  'bold',     s:Korange,             ['243','#767676'])
+call s:HL('MatchParen',  'bold',     s:Kaqua,               ['239','#4e4e4e'])
 call s:HL('Underlined',  'underline',s:Kaqua,               [])
 call s:HL('Title',       'bold',     s:Korange,             [])
 call s:HL('cFormat',     'bold',     s:Korange,             [])
