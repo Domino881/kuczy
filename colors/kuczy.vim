@@ -35,7 +35,7 @@ let s:Kaqua      = ['037','#00AFAF']
 let s:Kyellow    = ['222','#FFD787']
 let s:Klorange   = ['216','#FFAF87']
 let s:Korange    = ['209','#FF875F']
-let s:Kllorange  = ['215','#FFAF5F']
+let s:Kdyellow      = ['180','#FFAF5F']
 let s:Klgreenish = ['109','#87AFAF']
 let s:Kmaroon    = ['167','#FF875F']
 
@@ -43,7 +43,7 @@ let s:Kmaroon    = ['167','#FF875F']
 call s:HL('Normal',      'NONE',     ['223','#FFD7AF'],     ['235','#262626'])
 call s:HL('Comment',     'italic',   ['242','#6C6C6C'],     [])
 call s:HL('LineNr',      '',         ['242','#6C6C6C'],     [])
-call s:HL('CursorLineNr','NONE',     ['248','#A8A8A8'],     [])
+call s:HL('CursorLineNr','NONE',     s:Kdyellow,            [])
 call s:HL('SpecialKey',  '',         ['237','#3A3A3A'],     [])
 call s:HL('SignColumn',  'NONE',     [],                    ['NONE','NONE'])
 call s:HL('Conceal',     '',         [],                    ['NONE','NONE'])
@@ -70,7 +70,7 @@ call s:HL('MatchParen',  'bold',     s:Kaqua,               ['239','#4e4e4e'])
 call s:HL('Underlined',  'underline',s:Kaqua,               [])
 call s:HL('Title',       'bold',     s:Korange,             [])
 call s:HL('cFormat',     'bold',     s:Korange,             [])
-call s:HL('cCustomClass','',         s:Kllorange,           [])
+call s:HL('cCustomClass','',         s:Kdyellow,           [])
 
 "experimental - folding
 if exists('g:kuczyfold')
